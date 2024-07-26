@@ -1,0 +1,5 @@
++ eslint@8.57.0
++ typescript@5.5.4
+added 5 packages from 6 contributors, removed 3 packages, updated 9 packages and audited 1596 packages in 67.468s
+found 2 vulnerabilities (1 moderate, 1 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
