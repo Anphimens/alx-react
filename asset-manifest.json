@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Anphimens/alx-react.git/static/css/main.b01bbedf.css",
-    "main.js": "/Anphimens/alx-react.git/static/js/main.69f3e1b5.js",
-    "static/js/453.59b8a61b.chunk.js": "/Anphimens/alx-react.git/static/js/453.59b8a61b.chunk.js",
-    "static/media/holberton.jpg": "/Anphimens/alx-react.git/static/media/holberton.24bab5d633e36ca8d17e.jpg",
-    "index.html": "/Anphimens/alx-react.git/index.html",
-    "main.b01bbedf.css.map": "/Anphimens/alx-react.git/static/css/main.b01bbedf.css.map",
-    "main.69f3e1b5.js.map": "/Anphimens/alx-react.git/static/js/main.69f3e1b5.js.map",
-    "453.59b8a61b.chunk.js.map": "/Anphimens/alx-react.git/static/js/453.59b8a61b.chunk.js.map"
+    "main.css": "/alx-react/static/css/main.b01bbedf.css",
+    "main.js": "/alx-react/static/js/main.4a4344fd.js",
+    "static/js/453.59b8a61b.chunk.js": "/alx-react/static/js/453.59b8a61b.chunk.js",
+    "static/media/holberton.jpg": "/alx-react/static/media/holberton.24bab5d633e36ca8d17e.jpg",
+    "index.html": "/alx-react/index.html",
+    "main.b01bbedf.css.map": "/alx-react/static/css/main.b01bbedf.css.map",
+    "main.4a4344fd.js.map": "/alx-react/static/js/main.4a4344fd.js.map",
+    "453.59b8a61b.chunk.js.map": "/alx-react/static/js/453.59b8a61b.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b01bbedf.css",
-    "static/js/main.69f3e1b5.js"
+    "static/js/main.4a4344fd.js"
   ]
 }
