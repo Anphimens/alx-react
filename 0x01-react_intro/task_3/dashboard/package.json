@@ -2,6 +2,7 @@
   "name": "dashboard",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/Anphimens/alx-react.git",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -15,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -40,10 +43,17 @@
     "@types/webpack": "^5.28.5",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.8",
+    "eslint-plugin-jest": "^28.6.0",
+    "gh-pages": "^6.1.1",
     "jest-watch-typeahead": "^0.6.5",
     "sockjs-client": "^1.6.1",
     "typescript": "^5.5.4",
     "webpack-hot-middleware": "^2.26.1",
     "webpack-plugin-serve": "^1.6.0"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ]
   }
 }
