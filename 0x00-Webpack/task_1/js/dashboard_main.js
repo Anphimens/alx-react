@@ -17,7 +17,7 @@ const debouncedUpdateCounter = _.debounce(updateCounter, 300);
 $(document).ready(function () {
   $("body").append("<p>Holberton Dashboard</p>");
   $("body").append("<p>Dashboard data for the students</p>");
-  // Add button element
+  // Add button element with an ID
   $("body").append("<button>Click here to get started</button>");
   // Add paragraph element with id 'count'
   $("body").append('<p id="count"></p>');
@@ -25,5 +25,5 @@ $(document).ready(function () {
   $("body").append("<p>Copyright - Holberton School</p>");
 
   // bind the debouncedUpdateCounter function to the button click event
-  $("start-btn").on("click", debouncedUpdateCounter);
+  $("#start-btn").on("click", debouncedUpdateCounter);
 });
