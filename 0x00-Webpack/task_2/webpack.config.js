@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   mode: "production",
   entry: {
-    main: path.resolve(__dirname, "/js/dashboard_main.js"),
+    main: path.resolve(__dirname, "./js/dashboard_main.js"),
   },
   output: {
     filename: "bundle.js",
@@ -26,17 +26,15 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(png|jpg|gif|svg)$/,
-        use: [
-          {
-            loader: "file-loader",
-            options: {
-              name: "[name].[ext]",
-              outputPath: "images/",
-            },
-          },
-        ],
+        test: /\.(png|jpg|jpeg|gif|svg)$/,
+        type: "asset/resource",
+        generator: {
+          filename: "images/[hash][ext][query]",
+        },
       },
     ],
+  },
+  optimization: {
+    minimize: true,
   },
 };
