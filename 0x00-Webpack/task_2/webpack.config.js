@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   mode: "production",
   entry: {
-    main: path.resolve(__dirname, "/js/dashboard_main.js"),
+    main: path.resolve(__dirname, "./js/dashboard_main.js"), // Corrected entry path
   },
   output: {
     filename: "bundle.js",
@@ -27,18 +27,31 @@ module.exports = {
       },
       {
         test: /\.(png|jpg|jpeg|gif|svg)$/,
-        type: "asset/resource",
-        generator: {
-          filename: "images/[hash][ext][query]",
-        },
-      },
-      {
-        test: /\.(png|jpe?g|gif)$/,
         use: [
           {
             loader: "image-webpack-loader",
             options: {
-              disable: true,
+              disable: false, // Enable image optimization
+              mozjpeg: {
+                progressive: true,
+              },
+              optipng: {
+                enabled: true,
+              },
+              pngquant: {
+                quality: [0.65, 0.9],
+                speed: 4,
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+            },
+          },
+          {
+            loader: "file-loader", // This ensures images are bundled properly
+            options: {
+              name: "[path][name].[ext]",
+              outputPath: "images",
             },
           },
         ],
