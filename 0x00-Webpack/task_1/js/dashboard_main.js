@@ -11,7 +11,7 @@ function updateCounter() {
 }
 
 // Debounce the updateCounter function to limit how often it's called
-const debouncedUpdateCounter = _.debounce(updateCounter, 300);
+const debouncedUpdateCounter = _.debounce(updateCounter, 500);
 
 // Add paragraph elements
 $(document).ready(function () {
