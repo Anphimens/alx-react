@@ -3,7 +3,7 @@ const path = require("path");
 module.exports = {
   mode: "production",
   entry: {
-    main: path.resolve(__dirname, "./js/dashboard_main.js"),
+    main: path.resolve(__dirname, "/js/dashboard_main.js"),
   },
   output: {
     filename: "bundle.js",
@@ -31,6 +31,17 @@ module.exports = {
         generator: {
           filename: "images/[hash][ext][query]",
         },
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/,
+        use: [
+          {
+            loader: "image-webpack-loader",
+            options: {
+              disable: true,
+            },
+          },
+        ],
       },
     ],
   },
