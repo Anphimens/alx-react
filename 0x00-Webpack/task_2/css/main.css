@@ -1,14 +1,12 @@
-/* Style for the counter text */
+#logo {
+  width: 200px;
+  height: 200px;
+  background-image: url("task_2/assets/holberton-logo.jpg");
+  background-size: cover;
+}
+
 #count {
   font-weight: bold;
   display: inline-block;
   margin-left: 10px;
-}
-
-/* Style for the logo */
-#logo {
-  width: 200px;
-  height: 200px;
-  background-image: url(task_2/assets/holberton-logo.jpg);
-  background-size: cover;
 }
