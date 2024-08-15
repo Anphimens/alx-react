@@ -1,6 +1,6 @@
 import $ from "jquery";
 import _ from "lodash";
-import "../css/main.css";
+import "./css/main.css";
 
 // Initialize the click counter
 let clickCount = 0;
